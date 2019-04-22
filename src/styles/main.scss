@@ -71,11 +71,8 @@ body {
 }
 
 .row {
-    padding-top: 0;
-    
+    padding-top: 0;  
 }
-
-
 
 form {
   position: relative;
@@ -440,21 +437,81 @@ form {
 }
 
 
+.footer {
+    background: #f1f1f1;
+    padding: 23px 0px 23px 64px;
+    &-block {
+        margin: 26px 0px 0 0px;
+        background-color: #424242;
+        &-catalog {  
+            display: flex;
+            &-column{
+                width: 232px;
+                &__title{
+                    text-transform: uppercase;
+                    padding-bottom: 14px;
+                } 
+                &>ul {
+                    line-height: 27px;
+                    font-size: 18px;
+                    letter-spacing: 0.2px;
+                     
+                }     
+                &__item {
+                    list-style-type: none;
+                    text-decoration: underline; 
+                    &-contact{
+                        text-decoration: none;
+                    }
+                    &-work-time {
+                        text-decoration: none;
+                        letter-spacing: -0.6px;
+                        line-height: 14px;
+                        padding-top: 6px
+                    }
+                        
+                }
+                &__link {
+                    &-phone {
+                        text-decoration: none;
+                        letter-spacing: -0.2px;
+                    }
+                }
+            }
+             
+  
+        } 
+        &-info {
+            padding-top: 54px;
+            padding-left: 13px;
+            width: 100%;
+            &-left{
+                &>a{
+                    padding-right: 21px;
+                    &>img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 5px;
+                    }
 
-
-
-.footer-block {
-   &-catalog {
-       display: inline-block;
-        text-decoration: none; 
-        &__item {
-            &__link {
-                text-decoration: none; 
-            }     
+                }
+            }
+            &-right{
+                position: absolute;
+                right: 111px;
+                font-size: 18px;
+                font-family: 'PF Handbook Pro', Sans-Serif;
+                font-weight: bold;
+                
+            }
+            
+            
         }
-   } 
+    
+    
+    }
+    
 }
-
 @media  (max-width: 1200px) {
     .container {
         width: 992px;}
