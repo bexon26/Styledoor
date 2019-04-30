@@ -31,6 +31,21 @@
     }
 }
 
+@media screen and (min-width: 992px){
+    .container {
+        max-width: 955px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        max-width: 975px
+    }
+}
+
+.menu {
+    padding: 0;
+}
 
 h1, h2, h3, h4, h5, p {
     padding: 0;
@@ -200,6 +215,7 @@ form {
     &-menu {
         margin-top: 16px;
         &-list {
+            width: 100%;
             list-style-type: none;
             display: flex;
             background: linear-gradient(to top, #1a1a1a, #424242);
@@ -207,7 +223,7 @@ form {
                 color: white;
                 
             }
-            &__item {
+            &-item {
                 width: 28%; 
                 text-align: center;
                 letter-spacing: 1.4px;
@@ -231,15 +247,41 @@ form {
                     width: 2px;
                     height: calc(100% - 2px);
                     
-            }
-        }
-            
+                }
+                &-sub-menu {
+                    height: 0; overflow: hidden; opacity: 0; transition: all 0.5s ease-in;
+                    
+                    position: absolute;
     
-           
-        
-    }
+                    
+                    &-name {
+                        
+                        
+                    }
+                }
+            }
+            
+        }
     }
 }
+.btn-secondary {
+    background-color: transparent;
+    border-color: transparent; 
+}
+.btn-secondary:hover {
+    background-color: transparent;
+    border-color: transparent; 
+}
+
+.navbar {
+    padding: 0;
+}
+// Dark links against a light background
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+
+
 .advertising{
     padding-top: 18px;
 }
@@ -271,7 +313,6 @@ form {
             right: 15px;
             bottom: 19px;
             &-up{
-                bottom: 259px;
                 right: 38px;
                 font-size: 22px;
                 padding: 5px 16px 5px 23px;
@@ -290,21 +331,22 @@ form {
     }
 
     &-small{
-        padding-left: 0px;
-        &-image {
+        padding-left: 6px;
+        &-image-left {
             padding: 0;
             background-image: url(../img/sale_smal.png);
-            
+            width: 385px;
             height: 236px;
+            right: 0px;
             background-position: 50% 50%;
             background-size: cover;
         }
 
-        &-image-free{
+        &-image-right{
             padding: 0;
             margin-top: 13px;
             background-image: url(../img/size_free.jpg);
-            
+            width: 385px;
             height: 236px;
             background-position: 50% 50%;
             background-size: cover;
@@ -482,9 +524,10 @@ form {
   
         } 
         &-info {
-            padding-top: 54px;
-            padding-left: 13px;
+            padding: 54px 62px 0 13px;
             width: 100%;
+            display: flex;
+            justify-content: space-between;
             &-left{
                 &>a{
                     padding-right: 21px;
@@ -497,8 +540,6 @@ form {
                 }
             }
             &-right{
-                position: absolute;
-                right: 111px;
                 font-size: 18px;
                 font-family: 'PF Handbook Pro', Sans-Serif;
                 font-weight: bold;
@@ -512,6 +553,7 @@ form {
     }
     
 }
+
 @media  (max-width: 1200px) {
     .container {
         width: 992px;}
@@ -521,7 +563,8 @@ form {
         }
     .header-block {        
         &-phone{
-            padding-left: 2px;           
+            padding-left: 20px; 
+            min-width: 184px;          
             }
             &__back-call{
                 padding: 0px 0px 2px 25px;             
@@ -539,7 +582,7 @@ form {
         
         &-personal-area {
             line-height: 26px;
-            padding-left: 15px;
+            padding-right: 0;
             &__title {
                 padding-left: 5px;
             }
@@ -573,10 +616,10 @@ form {
                 right: 15px;
                 bottom: 19px;
                 &-up{
-                    bottom: 259px;
+                    
                     right: 38px;
                     font-size: 22px;
-                    padding: 5px 16px 5px 23px;
+                    padding: 2px 33px 4px 23px;
                 }
     
                 &-bottom {
@@ -592,21 +635,23 @@ form {
         }
     
         &-small{
-            padding-left: 0px;
-            &-image {
+            padding-left: 6px;
+            &-image-left {
                 padding: 0;
+                margin-top: 13px;
                 background-image: url(../img/sale_smal.png);
-                
+                width: 385px;
                 height: 236px;
+                right: 0px;
                 background-position: 50% 50%;
                 background-size: cover;
             }
     
-            &-image-free{
+            &-image-right{
                 padding: 0;
                 margin-top: 13px;
                 background-image: url(../img/size_free.jpg);
-                
+                width: 385px;
                 height: 236px;
                 background-position: 50% 50%;
                 background-size: cover;
@@ -738,3 +783,4 @@ form {
         }
     }
 }
+
