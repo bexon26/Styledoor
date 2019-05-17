@@ -34,6 +34,7 @@ const webpackConfig = require("./webpack.config.js"),
 	paths = {
 		views: {
 			src: [
+				
 				"./src/views/index.html",
 				"./src/pages/*.html"
 			],
@@ -41,7 +42,7 @@ const webpackConfig = require("./webpack.config.js"),
 			watch: "./src/**/*.html"
 		},
 		styles: {
-			src: "./src/styles/main.scss",
+			src: "./src/styles/main.scss", 
 			dist: "./dist/styles/",
 			watch: [
 				"./src/blocks/**/*.scss",
