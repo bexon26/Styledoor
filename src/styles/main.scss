@@ -980,3 +980,85 @@ form {
     
         }
     }
+
+.about {
+    padding-top: 60px;
+    &-header {
+        padding-bottom: 41px;
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+    }
+    &-left {
+        padding: 20px 0 0 0;
+        &>img{
+            width: 99%;
+        }
+    }
+    &-right {
+        padding-left: 24px;
+        &__title {
+            padding-bottom: 21px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        &__description{
+            line-height: 20px;
+            font-size: 18px;
+            &>span{
+                font-weight: bold;
+                font-size: 28px;
+                letter-spacing: 2px;
+            }
+        }
+        &-slide{
+            margin: 16px 44px 0 50px;
+        }
+    }
+}
+
+.news{
+    &-header{
+        padding-bottom:46px;
+    }
+    &-block {
+        padding: 0px 6px 0 0;
+        
+        &>img {
+            height: 230px;
+        }
+        &>p{
+            font-size: 14px;
+            text-indent: 14px;
+            line-height: 17px;
+            padding-bottom: 7px;
+        }
+        >h5{
+            padding: 15px 0 15px 5px;
+            font-weight: bold;
+        }
+        &>a{
+            text-indent: 5px;
+            border-bottom: 1px solid black;
+        }
+        &__btn {
+            display: block;
+        border-radius: 3px;
+        background: linear-gradient(to top, #f3bd00, #f3e300);
+        padding: 5px 12px 5px 19px;
+        font-family: 'PF Handbook Pro', Sans-Serif;
+        font-weight: bold;
+        letter-spacing: -0.4px;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+
+        right: 15px;
+        bottom: 19px;
+        margin-top: 33px;
+        width: 212px;
+        margin: 32px auto;
+        }
+    }
+}
