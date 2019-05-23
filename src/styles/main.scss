@@ -927,6 +927,7 @@ form {
                     letter-spacing: 1.25px;
                     font-family:'pfhandbookpro-regular', Sans-Serif;
                     font-weight: bold;
+                    height: 20px;
                 }
                 &-price {
                     font-size: 36px;
@@ -1002,6 +1003,7 @@ form {
             padding-bottom: 21px;
             font-size: 24px;
             font-weight: bold;
+            
         }
         &__description{
             line-height: 20px;
@@ -1062,3 +1064,252 @@ form {
         }
     }
 }
+
+
+// product card 
+
+
+    
+
+
+
+#products_example {
+    position:relative;
+    padding: 0;
+}
+
+#products {
+	// margin-left:26px;
+}
+
+#products .next,#products .prev {
+	
+	height:0;
+	
+	overflow:hidden;
+	display:block;
+	
+}
+
+
+#products .slides_container {
+	width: 318px;
+    height: 352px;
+	overflow:hidden;
+	float:left;
+	position:relative;
+	border:1px solid #dfdfdf;
+}
+
+#products .slides_container .slides_control a {
+    padding-top: 15px;
+}
+
+
+#products .pagination {
+	background:#dfdfdf;
+	width:312px;
+	// padding:5px 5px;
+	float:left;
+	margin-top:20px;
+	border-radius:5px;
+	
+}
+
+#products .pagination li {
+	float:left;
+	margin:2px 4px;
+}
+
+#products .pagination li a {
+	display:block;
+	width:95px;
+	height:93px;
+	margin:1px;
+	float:left;
+	background:#f9f9f9;
+}
+
+#products .pagination li.current a {
+	border:1px solid #7f7f7f;
+	margin:0;
+}
+
+.product-block{
+    &-right{
+        padding-left: 53px;
+        &__title{
+            padding-bottom: 2px;
+            letter-spacing: -0.3px;
+            font-family: 'PF Handbook Pro', Sans-Serif;
+            font-weight: bold;
+        }
+
+        &>p{
+            font-size: 18px;
+            line-height: 42px;
+        }
+
+        &__brand{
+            font-weight: bold;
+        }
+
+        &__model{
+            padding-left: 23px;
+        }
+
+        &__size{
+            letter-spacing: -1.1px;
+        }
+
+        &__opening{
+            letter-spacing: -1.1px;
+        }
+        &__color{
+            letter-spacing: -1.1px;
+            padding-bottom: 13px;
+        }
+        &__price{
+            margin-right: 8px;
+            letter-spacing: -1.1px;
+            font-size: 54px!important;
+        }
+        &__text{
+            font-size: 13px!important;
+            margin-top: -15px;
+            margin-bottom: 10px
+        }
+
+        &-check-block{
+            border: 1px solid #f3e300;
+            box-shadow: 0px 0px 4px #d2d2d2;
+            padding: 3px 22px;
+            margin-bottom: 23px;
+            border-radius: 2px;
+            &__title{
+                font-size: 23px!important;
+                margin-bottom: 4px;
+            }
+            &-string{
+                &__label{
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+
+        &-add-card{
+        
+            &>button{
+                background: #f3e300;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 0.25px;
+                border: 0px;
+                padding: 8px 36px;
+                margin-right: 6px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.flashcards {
+    margin-bottom: 80px
+}
+
+.description-block{
+    padding: 0;
+    &__title{
+        font-size: 22px!important;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1.3px;
+    }
+    &__specifications{
+        column-count: 2;
+        column-width: 155px;
+        column-gap: 1;
+        padding: 18px 49px 0 28px;
+        font-size: 15px;
+        letter-spacing: -0.3px;
+        line-height: 23px;
+
+    }
+    &__description{
+        padding: 23px 38px 0 6px;
+        
+        font-size: 14px;
+    }
+}
+
+.basket-block{
+    padding-left: 0px;
+    &-table {
+        &>thead td{
+        background: #333;
+        color: #fff;
+        font-size: 18px;
+        }
+    }
+    
+}
+
+.stocks{
+    &-header{
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    &-block{
+        &-title{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        &>p{
+            font-size: 18px;
+            text-indent: 14px;
+            line-height: 18px;
+            padding-top: 5px;
+            padding-bottom: 15px
+        }
+        &>img{
+            display: block;
+            margin: 0 auto;
+        }
+    }    
+}
+
+.news-list-block{
+    margin-right: -10px;
+    padding-right: 34px;
+    padding-top: 5px;
+    padding-left: 0px;
+    
+    &>img {
+        height: 334px;
+    }
+    &-text-block{
+        padding-left: 7px;
+        &-title{
+            padding: 16px 0 0 0px;
+            letter-spacing: -0.2px;
+        }
+        &>a{
+            text-indent: 5px;
+            border-bottom: 1px solid black
+        }
+        &>p{
+            padding-top: 9px;
+            padding-bottom: 3px;
+            letter-spacing: 0.25px;
+            text-indent: 13px;
+            font-size: 13px;
+            font-family:'pfhandbookpro-regular', Sans-Serif;
+            
+        }
+    }
+    
+}
+    

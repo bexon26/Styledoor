@@ -50,7 +50,11 @@ const webpackConfig = require("./webpack.config.js"),
 			]
 		},
 		scripts: {
-			src: "./src/js/index.js",
+			src:[
+				"./src/js/index.js",
+				"./src/js/slides.min.jquery.js",
+			], 
+			
 			dist: "./dist/js/",
 			watch: [
 				"./src/blocks/**/*.js",
@@ -205,6 +209,7 @@ export const scripts = () => gulp.src(paths.scripts.src)
 		"title": "JS files"
 	}))
 .on("end", browsersync.reload);
+
 
 export const images = () => gulp.src(paths.images.src)
 	.pipe(gulpif(production, imagemin([

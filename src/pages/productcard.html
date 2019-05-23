@@ -5,10 +5,28 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Окна&Двери</title>
+        <title>Окна&Двери</title>
+        
+        <script src="../js/jquery-1.4.4.min.js"></script>
+        <script src="../js/slides.min.jquery.js"></script>
+        
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../styles/main.css" >
+        <script>
+            $(function(){
+                $('#products').slides({
+                    preload: true,
+                    preloadImage: 'img/loading.gif',
+                    effect: 'slide, fade',
+                    crossfade: true,
+                    slideSpeed: 200,
+                    fadeSpeed: 500,
+                    generateNextPrev: true,
+                    generatePagination: false
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="../styles/main.css" >
 		
 		
 
@@ -166,221 +184,91 @@
 			
 					</aside>
 					<div class="content col-sm-9">
-						<h1>Двери Эльпорта, РФ</h1>
-						<div class="row prod-list">
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 4.22 Almon/Bianco Veralinga/1---s3-4p22-almon-28-lunnyi-kamen.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 4.22 Almon/Bianco Veralinga/2---s3-4p22-almon-28-bianco-veralinga-ww-lunnyi-kamen.jpg" alt="" >
+						<div class="row product-block">
+                            <!-- <div class="col-md-5"> -->
+                                <!-- <img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/1full_optim_cherny_shelk_1_1-425x426.jpg" alt="">
+                                <img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/2---full_optim_cherny_shelk_1-425x426.jpg" alt="">
+                                <img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/3----full_optim_cherny_shelk_2-425x426.jpg" alt=""> -->
+                                
+                            <!-- </div> -->
+                            <div id="products_example"class="col-md-4">
+								<div id="products" >
+									<div class="slides_container">
+										<a href="" target="_blank"><img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/1full_optim_cherny_shelk_1_1-425x426.jpg" width="314" alt=""></a>
+										<a href="" target="_blank"><img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/2---full_optim_cherny_shelk_1-425x426.jpg" width="314" alt=""></a>
+										<a href="" target="_blank"><img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/3----full_optim_cherny_shelk_2-425x426.jpg" width="314" alt=""></a>					
+										
+									</div>
+									<ul class="pagination">
+										<li><a href="#"><img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/1full_optim_cherny_shelk_1_1-425x426.jpg" width="94" alt=""></a></li>
+										<li><a href="#"><img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/2---full_optim_cherny_shelk_1-425x426.jpg" width="94" alt=""></a></li>
+										<li><a href="#"><img src="../img/Карточки  товаров/Эльпорта/Каталог/ДВЕРЬ ВХОДНАЯ АЗИМУТ ВЕНГЕ/3----full_optim_cherny_shelk_2-425x426.jpg" width="94" alt=""></a></li>
+										
 								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Porta S 4.22 Almon 28/Bianco Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">511,98 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="productcard.html">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 4.22 Almon/Cappuccino Veralinga/1----s3-4p22-almon-28-lunnyi-kamen-3.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 4.22 Almon/Cappuccino Veralinga/2----s3-4p22-almon-28-cappuccino-veralinga-wp-lunnyi-kamen.jpg" alt="" >								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Porta S 4.22 Almon 28/Cappuccino Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">511,98 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 4.22 Almon/Wenge Veralinga/1----s3-4p22-almon-28-lunnyi-kamen-2.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 4.22 Almon/Wenge Veralinga/2----s3-4p22-almon-28-wenge-veralinga-bs-lunnyi-kamen.jpg" alt="" >
+							</div>  
+                            <div class="product-block-right col-md-8">
+                                <h4 class="product-block-right__title">ДВЕРЬ ВХОДНАЯ АЗИМУТ| ВЕНГЕ</h4>
+								<p><span class="product-block-right__brand">Бренд:</span> Промет, РФ  <span class="product-block-right__model product-block-right__brand">Модель:</span> АЗИМУТ| Венге</p>
+								<p class="product-block-right__size">Размер (мм): <button>880x2050</button> <button>980x2060</button></p>
+								<p class="product-block-right__opening">Открывание: <button>Левое</button> <button>Правое</button></p>
+								<p class="product-block-right__color">Выбирите цвет: <button>Левое</button> <button>Правое</button></p>
+								<p><span class="product-block-right__price"> 649.00</span>	 руб. <button>1</button></p>
+								<p class="product-block-right__text">Цена за блок</p>
+								<div class="product-block-right-check-block">
+									<h5 class="product-block-right-check-block__title">Получите скидку!</h5>
+									<div class="form-check product-block-right-check-block-string">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+										<label class="form-check-label product-block-right-check-block-string__label" for="defaultCheck1">
+											При оплате наличными 10%
+										</label>
+									</div>
+									<div class="form-check product-block-right-check-block-string">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+										<label class="form-check-label product-block-right-check-block-string__label" for="defaultCheck2">
+											Новоселам 5%
+										</label>
+									</div> 
+									<div class="form-check product-block-right-check-block-string">
+										<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+										<label class="form-check-label product-block-right-check-block-string__label" for="defaultCheck3">
+											Многодетным 5%
+										</label>
+									</div>   
 								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Porta S 4.22 Almon 28/Wenge Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">511,98 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 9.29 Almon/Bianco Veralinga/1---porta-s-3-9-p29-almon-28-lunnyi-kamen.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 9.29 Almon/Bianco Veralinga/2---porta-s-3-9-p29-almon-28-bianco-veralinga-ww-lunnyi-kamen.jpg" alt="" >
+								<div class="product-block-right-add-card">
+									<button>Добавить в корзину</button>
 								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная 
-											Porta S 9.29
-											Almon 28/Bianco Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">538,62 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 9.29 Almon/Bianco Veralinga/1---porta-s-3-9-p29-almon-28-lunnyi-kamen.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 9.29 Almon/Cappuccino Veralinga/2----porta-s-3-9-p29-almon-28-cappuccino-veralinga-wp-lunnyi-kamen.jpg" alt="" >
-								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная 
-											Porta S 9.29
-											Almon 28/Cappuccino Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">538,62 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 9.29 Almon/Bianco Veralinga/1---porta-s-3-9-p29-almon-28-lunnyi-kamen.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 9.29 Almon/Wenge Veralinga/3---porta-s-3-9-p29-almon-28-wenge-veralinga-bs-lunnyi-kamen.jpg" alt="" >
-								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная 
-											Porta S 9.29
-											Almon 28/Wenge Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">538,62 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 51.61 Almon/Bianco Veralinga/1---porta-s-3-51-p61-almon-28-lunnyi-kamen.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 51.61 Almon/Bianco Veralinga/2---porta-s-3-51-p61-almon-28-bianco-veralinga-r-lunnyi-kamen.jpg" alt="" >
-								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Porta S 51.61 Almon 28/Bianco Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">565,62 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 51.61 Almon/Bianco Veralinga/1---porta-s-3-51-p61-almon-28-lunnyi-kamen.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 51.61 Almon/Cappuccino Veralinga/2----porta-s-3-51-p61-almon-28-cappuccino-veralinga-r-lunnyi-kamen.jpg" alt="" >
-								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Porta S 51.61 Almon 28/Cappuccino Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">565,62 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 51.61 Almon/Bianco Veralinga/1---porta-s-3-51-p61-almon-28-lunnyi-kamen.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Porta S 51.61 Almon/Wenge Veralinga/2---porta-s-3-51-p61-almon-28-wenge-veralinga-r-lunnyi-kamen.jpg" alt="" >
-								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Porta S 51.61 Almon 28/Wenge Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">565,62 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-
-
-
-
-
-							
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Стрит Walnut/Cappuccino Veralinga/1----streetf.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Стрит Walnut/Cappuccino Veralinga/2---streetcv.jpg" alt="" >
-								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Стрит
-											Walnut/Cappuccino Veralinga</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">535,08 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-							<div class="el-porta-block col-sm-4">
-								<div class="el-porta-block-image">
-									
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Стрит Walnut/Cappuccino Veralinga/1----streetf.jpg" alt="" >
-									<img class="el-porta-block-image__responsive" src="../img/Каталог/Стрит Walnut/Wenge Veralinga/2----streetwv.jpg" alt="" >
-								</div>
-								<div class="el-porta-block-text-block">
-									<P class="el-porta-block-text-block__title">Дверь входная Стрит Walnut/Wenge Veralinga	</P>
-									<P class="el-porta-block-text-block-price">
-										<span class="el-porta-block-text-block-price__new-price">535,08 
-											<span class="el-porta-block-text-block-price__new-text">руб.</span>
-										</span>
-										
-									</P>
-								<a class="sale-block-text-block__btn" href="">Смотреть</a>
-								</div>	
-							</div>
-
+                            </div> 
+                        </div>
+                        <div class="row flashcards">
+                            <div class="flashcards-block col-sm-2"><img src="../img/card1.jpg" alt=""></div>
+                            <div class="flashcards-block col-sm-2"><img src="../img/card2.jpg" alt=""></div>
+                            <div class="flashcards-block col-sm-2"><img src="../img/card3.jpg" alt=""></div>
+                            <div class="flashcards-block col-sm-2"><img src="../img/card4.jpg" alt=""></div>
+                            <div class="flashcards-block col-sm-2"><img src="../img/card5.jpg" alt=""></div>
+                            <div class="flashcards-block col-sm-2"><img src="../img/card6.jpg" alt=""></div>
+                        </div>
+                        <div class="row description">
+                            <div class="description-block col-sm-6">
+                                <h4 class="description-block__title">ХАРАКТЕРИСТИКИ</h4>
+                                <p class="description-block__specifications">
+									Возможна установки на улицу Да
+                                    Толщина мелалла 1,2 мм
+                                    Толщина полотна 70 мм
+                                    Утеплитель Мин. Вата
+                                    Замки верхн./нижн. Да/ Да
+                                    Внутри МДФ, ЭкоШпон Венге
+                                    Снаружи Металл/ Черный шелк
+                                    Уплотнитель 2 Контура
+                                    Класс двери Стандарт
+                                </p>
+                            </div>
+                            <div class="description-block col-sm-6">
+                                <h4 class="description-block__title" >ОПИСАНИЕ</h4>
+                                <p class="description-block__description">Двери обладают высокими антикоррозийными свойствами. Полотно, коробка и все металлические элементы - оцинкованы.</p>
+                            </div>
+                        </div> 
 						
-	
-
-
-
-
-
-
-
-
-
-
-						</div>
 
 					</div>
 
@@ -392,7 +280,8 @@
 				
 
 
-			</div>		
+            </div>	
+             	
 				<footer>
 					<div class="footer-block">
 						<div class="footer">			
@@ -505,7 +394,7 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 	<!-- JQuery -->	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<!-- Bootstrap tooltips -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<!-- Bootstrap core JavaScript-->
@@ -580,6 +469,7 @@
 	} 
 	window.onload=listStart; 
 	</script>
+<!-- Script галерея карточки товара -->
 
 	<!-- SCRIPT Aside End-->
 	</body>
