@@ -24,24 +24,591 @@
     font-style: normal;
 }
 
-@media screen and (min-width: 1200px){
+
+
+
+// iphone 5
+@media screen and (max-width: 380px){
     .container {
-        max-width: 1230px;
-        padding-right: 0; 
+        width: 320px;
     }
+    .header-block{
+        padding-top: 10px;
+        &-phone{display: none;}
+        &-operation-mode{display: none;}
+        &-center{ padding:0; margin: 0 auto}
+        &-personal-area{margin: 0 auto;width: auto; padding-top: 10px; }
+        &-basket{padding-top: 0}
+    }
+
+    .advertising-block{
+        &-big{
+            &-img{
+                height: 230px;
+            }
+        }
+        &-small{
+            padding: 0;
+            &-image-left{
+                height: 200px;
+                margin: 0 auto;
+            }
+            &-block-right{
+                padding: 0 0 0 15px;
+                &-image{
+                    height: 200px;
+                    margin: 0 auto;
+                }
+            }
+            
+        }
+        
+    }
+    .carousel-control-next{
+        &__mod{
+            margin-top: 5%;
+            margin-right: 0px;
+        }
+    }
+    .carousel-control-prev{
+        &__mod{
+            margin-top: 5%;
+            margin-left: 0px;
+        }
+    }
+    .sale{
+        &-header{
+            &-line-left{width: 50px;}
+            &-line-right{width: 50px;}
+        }
+        
+    }
+    .footer{
+        &-block-catalog{
+            display: none;
+            &-column{
+                margin: 0 auto;
+                width: 130px;
+                height: 246px;
+            }
+        }
+        &-carousel{
+            display: block;
+            
+        }
+    }
+    
 }
 
-@media screen and (min-width: 992px){
+// mi8-lite
+@media screen and (max-width: 576px){
     .container {
-        max-width: 955px;
+        width: 400px;
     }
+    .header-block{
+        padding-top: 20px;
+        &-phone{margin: 0 auto; width: auto}
+        &-operation-mode{margin: 0 auto; width: auto}
+        &-center{margin: 0 auto}
+        &-personal-area{margin: 0 auto; padding-left:0; padding-top: 10px; width: auto }
+        &-basket{margin: 20px auto; padding-left:0; width: auto}
+    }
+
+    .advertising-block{
+        &-big{
+            &-img{
+                height: 310px;
+            }
+        }
+        &-small{
+            padding: 0;
+            &-image-left{
+                height: 243px;
+                margin: 0 auto;
+            }
+            &-block-right{
+                padding: 0 0 0 15px;
+                &-image{
+                    height: 243px;
+                    margin: 0 auto;
+                }
+            }
+            
+        }
+    }
+    .sale{
+        &-header{
+            &-line-left{width: 90px;}
+            &-line-right{width: 90px;}
+        }
+        &-block{
+            width: 240px;
+            min-width: 240px;
+            margin: 0 auto;
+             &-576{
+                  display: none;
+            }
+        }
+    }
+    .footer{
+        padding-left: 10px;
+        &-block-catalog{
+            &-column{
+                &__link{
+                    font-size: 16px;
+                }
+                &__item-work-time{
+                    font-size: 16px;
+                }
+                &-4{
+                    display: none;
+                }
+                &-1_2{
+                    display: block;
+                    &__title{
+                        padding-top: 10px;
+                    }
+                }
+                &-2_1{
+                        
+                    display: block;
+                }
+                &-2_2{
+                    display: none;
+                }
+
+            }
+        }
+    }
+    
 }
 
-@media screen and (min-width: 768px){
-    .container {
-        max-width: 975px
+@media screen and (max-width: 769px){
+    .advertising-block{
+        &-big{
+            &-img{
+                height: 310px;
+            }
+        }
+        &-small{
+            padding: 0;
+            &-image-left{
+                height: 150px;
+            }
+            &-block-right{
+                padding: 0 0 0 15px;
+                &-image{
+                    height: 150px;
+                }
+            }
+            
+        }
     }
+    .carousel-control-next{
+        &__mod{
+            margin-top: 5%;
+            margin-right: -32px;
+        }
+    }
+    .carousel-control-prev{
+        &__mod{
+            margin-top: 5%;
+            margin-left: -32px;
+        }
+    }
+    .sale{
+        &-header{
+            &-line-left{width: 120px;}
+            &-line-right{width: 120px;}
+        }
+    }
+
+    .footer-block-catalog{
+        &-column{
+            &__link{
+                font-size: 16px;
+            }
+            &__item-work-time{
+                font-size: 16px;
+            }
+            &-3{
+                display: none;
+            }
+            &-2_1{
+                display: none;
+            }
+            &-2_3{
+                display: block;
+            }
+           
+
+        }
+    }
+
 }
+
+@media screen and (max-width: 992px){
+    .container{
+        width: 992px;
+    }
+    .header-block{
+        padding-top: 10px;
+        &-phone{
+            
+            padding-right: 0px;
+        }
+        &-center{
+            padding: 0;
+            margin: 0 auto;
+        }
+        &-operation-mode{
+            padding-left: 20px;
+        }
+        &-basket{
+            padding: 20px 0;
+        }
+        &-menu{
+            padding-right: 0;
+            &-list{
+                &-item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .advertising-block {
+        &-big{
+            &-img{
+                height: 400px;
+            }
+        }
+        &-small{
+            padding: 0;
+            &-image-left{
+                height: 215px;
+            }
+            &-block-right{
+                padding: 0 0 0 15px;
+                &-image{
+                    height: 215px;
+                }
+            }
+            
+        }
+    }
+    .carousel-control-next{
+        &__mod{
+            margin-top: 5%;
+            margin-right: -10px;
+        }
+    }
+    .carousel-control-prev{
+        &__mod{
+            margin-top: 5%;
+            margin-left: -10px;
+        }
+    }
+    .sale{
+
+        &-header{
+            &-line-left{
+                width: 185px;
+            } 
+            &-line-right{
+                width: 185px;
+            }   
+        }
+        &-block{
+            width: 240px;
+            min-width: 240px;
+            margin: 0 auto;
+             &-992{
+                  display: none;
+            }
+        }
+    }
+    &.about{
+        &-header{
+            padding-bottom: 0px;
+        }
+        &-left{
+            padding-top: 0;
+        }
+        &-right{
+            padding-top: 20px;
+            &-slide{
+                display: none;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 992px;}
+        .page-main {
+            padding-top: 0;
+            max-width: 992px;
+        }
+    .header-block {        
+        &-phone{
+            padding-left: 0px; 
+                      
+            }
+        &__back-call{
+            padding: 0px 0px 2px 25px;             
+        }
+        &-operation-mode {
+            padding-left: 0px;
+        }
+
+        &-center {
+            
+            width: 250px;;
+            &__img {
+                padding-left: 0px;
+            }
+        }
+        
+        &-personal-area {
+            line-height: 26px;
+            padding-right: 0;
+            padding-left: 0;
+            &__title {
+                padding-left: 5px;
+            }
+        }
+
+        &-basket{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        &-menu{
+            padding-right: 0;
+            &-list{
+                
+            }
+        }
+        
+    } 
+    .advertising-block {
+        padding-top: 18;
+        
+        &-big {
+            padding: 0;
+            &-image {
+                padding: 0 0 0 0;
+                
+                
+                height: 481px;
+                background-position: 50% 50%;
+                background-size: cover;
+            }
+            &__btn {
+                display: block;
+                border-radius: 3px;
+                background: linear-gradient(to top, #f3bd00, #f3e300);
+                padding: 4px 49px 5px 39px;
+                font-family:'PF Handbook Pro', Sans-Serif;
+                font-weight: bold; 
+                letter-spacing: 0.5px;
+                color: black;
+                font-size: 24px;
+                text-align: center;
+                position: absolute;
+                right: 15px;
+                bottom: 19px;
+                &-up{
+                    
+                    right: 38px;
+                    font-size: 22px;
+                    padding: 2px 33px 4px 23px;
+                }
+    
+                &-bottom {
+                    font-size: 22px;
+                    right: 38px;
+                    font-size: 22px;
+                    padding: 2px 33px 4px 23px;
+                }
+            }
+    
+        
+        
+        }
+    
+        &-small{
+            padding-left: 6px;
+            &-image-left {
+                padding: 0;
+                margin-top: 13px;
+                background-image: url(../img/sale_smal.png);
+                width: 385px;
+                height: 280px;
+                right: 0px;
+                background-position: 50% 50%;
+                background-size: cover;
+            }
+    
+            &-block-right{
+                padding: 0 0 0 15px;
+                &-image{
+                    height: 280px;
+                }
+            }
+    
+    
+        }
+        
+    } 
+    
+    .sale {
+        padding: 48px 0px 40px 0px;
+        &-header {
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family:'PF Handbook Pro', Sans-Serif;
+            font-weight: bold; 
+            position: relative;
+            padding-bottom: 72px;
+            letter-spacing: -0.3px;
+            &-line-left {
+                height: 1px;
+                background: #000;
+                float: left;
+                width: 290px;
+                margin-top: 21px;
+            }
+            &-line-right {
+                height: 1px;
+                background: #000;
+                float: right;
+                width: 290px;
+                margin-top: 21px
+            }
+        
+        }
+        &-block {
+            padding: 0 6px 0 0;
+            max-width: 225px;
+            &-image {
+                &__sticker {
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    margin-left: 0px;
+                    width: 52px;
+                    border-radius: 50px;
+                    padding: 11px 0px;
+                    background: #df0700;
+                    color: #ffffff;
+                    font-family: 'PF Handbook Pro', Sans-Serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                &__responsive {
+                    max-width: 100%;
+                }
+            }
+            &-text-block {
+                max-width: 280px;
+                border-bottom: 1px solid #d7d7d7;
+                padding-top: 13px;
+                padding-bottom: 22px;
+                &__title {
+                    text-align: center;
+                    letter-spacing: 1.25px;
+                    font-family:'pfhandbookpro-regular', Sans-Serif;
+                    font-weight: bold;
+                    height: 20px;
+                }
+                &-price {
+                    font-family:'pfhandbookpro-regular', Sans-Serif;
+                    text-align: center;
+                    margin: 0px 0px -6px 0;
+                    padding: 12px 0px 10px 0px;
+                    &__new-price{
+                        font-size: 28px;
+                        color: #de0000;
+                        letter-spacing: 0.37px;
+                    }
+                    &__new-text{
+                        font-size: 18px;
+                        font-weight: bold;
+                        letter-spacing: 0.37px;
+                    }
+                    &__old-price {
+                        font-family:'PF Handbook Pro', Sans-Serif!important;
+                        font-weight: bold!important;
+                        text-decoration: line-through;
+                        font-size: 16px!important;
+                        letter-spacing: 0.37px;
+                    }
+                    
+                }
+                &__btn {
+                    display: block;
+                    border-radius: 6px;
+                    background: linear-gradient(to top, #f3bd00, #f3e300);
+                    padding: 2px 49px 3px 58px;
+                    font-family: 'PF Handbook Pro', Sans-Serif;
+                    font-weight: bold;
+                    letter-spacing: 0.15px;
+                    color: black;
+                    font-size: 18px;
+                    text-align: center
+                }
+            }
+            
+            &-all-items {
+                position: relative;
+                &__item {
+                    position: absolute;
+                    right: 44px;
+                    font-weight: normal!important;
+                    font-size: 22px;
+                    text-decoration: underline;
+                }
+            }
+            
+    
+        }
+    }
+
+    .about{
+        &-right{
+            &__title {
+                padding-bottom: 4px;
+                font-size: 21px;
+            }
+            &-slide{
+                margin: 1px -4px 0 1px;
+                &__img{
+                    height: 242px;
+                }
+            }
+            &__description{
+                text-indent: 14px;
+                &>span{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.container{
+    padding: 0
+}
+
+
 
 .menu {
     padding: 0;
@@ -80,8 +647,8 @@ body {
 }
 
 .page-main {
-    padding-top: 0;
-    max-width: 1230px;
+    padding: 0;
+    max-width: 1175px;
     
 }
 
@@ -96,11 +663,18 @@ form {
   margin: 0 auto;
 }
 
+.header-adaptiv{
+    padding: 0px;
+    &-left{
+        margin: 0 auto;
+    }
+}
+
 .header-block {
     margin: 0 auto;
     padding-top: 50px;
     &-phone{
-        padding-left: 29px;
+        padding-left: 18px;
         line-height: 22px;
         &__phone {
             display: block;
@@ -122,7 +696,7 @@ form {
     }
 
     &-operation-mode {
-        padding-left: 66px;
+        padding-left: 0px;
         padding-right: 0px;
         line-height: 22px;
         letter-spacing: -0.2px;
@@ -201,11 +775,17 @@ form {
         }
     }
     &-basket {
-        padding-top: 15px;
-        padding-left: 42px;
+        padding-top: 26px;
+        padding-left: 3px;
+        
+             background: url(../img/Shopping-Cart-icon.png) 0 50% no-repeat;
+        background-size: 20%;
+        color: black;
+        
+       
         &__link {
-            background: url(../img/Shopping-Cart-icon.png) 0 50% no-repeat;
-            background-size: 20%;
+            // background: url(../img/Shopping-Cart-icon.png) 0 50% no-repeat;
+            // background-size: 20%;
             color: black;
             padding: 18px 0px 10px 48px;
             font-size: 18px;
@@ -215,6 +795,7 @@ form {
     
     &-menu {
         margin-top: 16px;
+        padding-left: 0;
         &-list {
             width: 100%;
             list-style-type: none;
@@ -266,13 +847,26 @@ form {
     }
 }
 .btn-secondary {
-    background-color: transparent;
-    border-color: transparent; 
+    background-color: transparent!important ;
+    border-color: transparent !important ;
 }
 .btn-secondary:hover {
     background-color: transparent;
-    border-color: transparent; 
+    border-color: transparent!important ;
 }
+.show>.btn-secondary.dropdown-toggle{
+    background-color: transparent!important ;
+    border-color: transparent!important ;
+    
+}
+
+.dropdown-menu.show{
+    background-color: #424242;
+    &>a{
+        font-size: 20px;
+    }
+}
+
 
 .navbar {
     padding: 0;
@@ -297,10 +891,7 @@ form {
         padding: 0;
         &-img {
             padding: 0 0 0 0;
-            
-            
             height: 481px;
-            
         }
         &__btn {
             display: block;
@@ -329,9 +920,6 @@ form {
                 padding: 2px 33px 4px 23px;
             }
         }
-
-    
-    
     }
 
     &-small{
@@ -339,24 +927,55 @@ form {
         &-image-left {
             padding: 0;
             background-image: url(../img/sale_smal.png);
-            width: 385px;
             height: 236px;
             right: 0px;
             background-position: 50% 50%;
             background-size: cover;
         }
+        &-block-right{
+            padding: 0px;
+             &-image{
+                padding: 0;
+                margin-top: 13px;
+                background-image: url(../img/size_free.jpg);
+                height: 236px;
+                background-position: 50% 50%;
+                background-size: cover;
+            }
 
-        &-image-right{
-            padding: 0;
-            margin-top: 13px;
-            background-image: url(../img/size_free.jpg);
-            width: 385px;
-            height: 236px;
-            background-position: 50% 50%;
-            background-size: cover;
         }
 
-
+    }
+    
+}
+.carousel-control-next{
+    &-icon{
+      color:black;  
+      background-image: url(../img/next-icon.png);
+      width: 20px;
+      height: 30px;
+    }
+    &__1{
+        height: 71%;
+        margin-top: 9%;
+    }
+    &__mod{
+        height: 71%;
+        margin-top: 5%;
+        margin-right: -74px;
+    }
+}
+.carousel-control-prev{
+    &-icon{
+      color:black;  
+      background-image: url(../img/prev-icon.png);
+      width: 20px;
+      height: 30px;
+    }
+    &__mod{
+        height: 71%;
+        margin-top: 5%;
+        margin-left: -74px;
     }
     
 }
@@ -365,6 +984,8 @@ form {
     
     padding: 48px 40px 40px 40px;
     &-header {
+        padding: 0;
+        padding-bottom: 72px;
         display: inline-block;
         text-align: center;
         text-transform: uppercase;
@@ -378,14 +999,14 @@ form {
             height: 1px;
             background: #000;
             float: left;
-            width: 425px;
+            width: 400px;
             margin-top: 21px;
         }
         &-line-right {
             height: 1px;
             background: #000;
             float: right;
-            width: 425px;
+            width: 400px;
             margin-top: 21px
         }
     
@@ -496,7 +1117,9 @@ form {
         &-catalog {  
             display: flex;
             &-column{
+                display: block;
                 width: 232px;
+                padding-bottom: 10px;
                 &__title{
                     text-transform: uppercase;
                     padding-bottom: 14px;
@@ -526,6 +1149,22 @@ form {
                         text-decoration: none;
                         letter-spacing: -0.2px;
                     }
+                }
+                &-1_2{
+                    &__header{
+                        padding-top: 10px;
+                    }
+                    display: none;
+                }
+                &-2_1{
+                    
+                    display: none;
+                }
+                &-2_3{
+                    &__title{
+                        padding-top: 10px;
+                    }
+                    display: none;
                 }
             }
              
@@ -559,238 +1198,13 @@ form {
     
     
     }
+    &-carousel{
+        display: none;
+    }
     
 }
 
-@media  (max-width: 1200px) {
-    .container {
-        width: 992px;}
-        .page-main {
-            padding-top: 0;
-            max-width: 992px;
-        }
-    .header-block {        
-        &-phone{
-            padding-left: 20px; 
-            min-width: 184px;          
-            }
-            &__back-call{
-                padding: 0px 0px 2px 25px;             
-            }
-        &-operation-mode {
-            padding-left: 22px;
-        }
-    
-        &-center {
-            width: 250px;;
-            &__img {
-                padding-left: 0px;
-            }
-        }
-        
-        &-personal-area {
-            line-height: 26px;
-            padding-right: 0;
-            &__title {
-                padding-left: 5px;
-            }
-        }
-    } 
-    .advertising-block {
-        padding-top: 18;
-        
-        &-big {
-            padding: 0;
-            &-image {
-                padding: 0 0 0 0;
-                
-                
-                height: 481px;
-                background-position: 50% 50%;
-                background-size: cover;
-            }
-            &__btn {
-                display: block;
-                border-radius: 3px;
-                background: linear-gradient(to top, #f3bd00, #f3e300);
-                padding: 4px 49px 5px 39px;
-                font-family:'PF Handbook Pro', Sans-Serif;
-                font-weight: bold; 
-                letter-spacing: 0.5px;
-                color: black;
-                font-size: 24px;
-                text-align: center;
-                position: absolute;
-                right: 15px;
-                bottom: 19px;
-                &-up{
-                    
-                    right: 38px;
-                    font-size: 22px;
-                    padding: 2px 33px 4px 23px;
-                }
-    
-                &-bottom {
-                    font-size: 22px;
-                    right: 38px;
-                    font-size: 22px;
-                    padding: 2px 33px 4px 23px;
-                }
-            }
-    
-        
-        
-        }
-    
-        &-small{
-            padding-left: 6px;
-            &-image-left {
-                padding: 0;
-                margin-top: 13px;
-                background-image: url(../img/sale_smal.png);
-                width: 385px;
-                height: 236px;
-                right: 0px;
-                background-position: 50% 50%;
-                background-size: cover;
-            }
-    
-            &-image-right{
-                padding: 0;
-                margin-top: 13px;
-                background-image: url(../img/size_free.jpg);
-                width: 385px;
-                height: 236px;
-                background-position: 50% 50%;
-                background-size: cover;
-            }
-    
-    
-        }
-        
-    } 
-    
-    .sale {
-    
-        padding: 48px 40px 40px 40px;
-        &-header {
-            display: inline-block;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 30px;
-            font-family:'PF Handbook Pro', Sans-Serif;
-            font-weight: bold; 
-            position: relative;
-            padding-bottom: 72px;
-            letter-spacing: -0.3px;
-            &-line-left {
-                height: 1px;
-                background: #000;
-                float: left;
-                width: 290px;
-                margin-top: 21px;
-            }
-            &-line-right {
-                height: 1px;
-                background: #000;
-                float: right;
-                width: 290px;
-                margin-top: 21px
-            }
-        
-        }
-    
-    
-        &-block {
-            padding: 0 6px 0 0;
-            max-width: 280px;
-            &-image {
-                &__sticker {
-                    position: absolute;
-                    top: 6px;
-                    left: 6px;
-                    margin-left: 0px;
-                    width: 52px;
-                    border-radius: 50px;
-                    padding: 11px 0px;
-                    background: #df0700;
-                    color: #ffffff;
-                    font-family: 'PF Handbook Pro', Sans-Serif;
-                    font-weight: bold;
-                    font-size: 20px;
-                    text-align: center;
-                    text-transform: uppercase;
-                }
-                &__responsive {
-                    max-width: 100%;
-                }
-            }
-            
-    
-            &-text-block {
-                max-width: 280px;
-                border-bottom: 1px solid #d7d7d7;
-                padding-top: 13px;
-                padding-bottom: 22px;
-                &__title {
-                    text-align: center;
-                    letter-spacing: 1.25px;
-                    font-family:'pfhandbookpro-regular', Sans-Serif;
-                    font-weight: bold;
-                }
-                &-price {
-                    font-size: 36px;
-                    font-family:'pfhandbookpro-regular', Sans-Serif;
-                    text-align: center;
-                    margin: 0px 0px -6px 0;
-                    padding: 12px 0px 10px 0px;
-                    &__new-price{
-                        font-size: 36px;
-                        color: #de0000;
-                        letter-spacing: 0.37px;
-                    }
-                    &__new-text{
-                        font-size: 18px;
-                        font-weight: bold;
-                        letter-spacing: 0.37px;
-                    }
-                    &__old-price {
-                        font-family:'PF Handbook Pro', Sans-Serif!important;
-                        font-weight: bold!important;
-                        text-decoration: line-through;
-                        font-size: 16px!important;
-                        letter-spacing: 0.37px;
-                    }
-                    
-                }
-                &__btn {
-                    display: block;
-                    border-radius: 6px;
-                    background: linear-gradient(to top, #f3bd00, #f3e300);
-                    padding: 2px 49px 3px 58px;
-                    font-family: 'PF Handbook Pro', Sans-Serif;
-                    font-weight: bold;
-                    letter-spacing: 0.15px;
-                    color: black;
-                    font-size: 18px;
-                    text-align: center
-                }
-            }
-            
-            &-all-items {
-                position: relative;
-                &__item {
-                    position: absolute;
-                    right: 44px;
-                    font-weight: normal!important;
-                    font-size: 22px;
-                    text-decoration: underline;
-                }
-            }
-    
-        }
-    }
-}
+
 
 // aside
 .aside_title {
@@ -889,7 +1303,8 @@ form {
         &-block {
             padding: 0 6px 0 0;
             max-width: 307px;
-            
+            min-width: 233px;
+            // margin: 0 auto;
             &-image {
                 
                 &__sticker {
@@ -912,7 +1327,8 @@ form {
                     max-width: 100%;
                     width: 137px;
                     height:  275px;
-                    
+                    display: block;
+                     margin: 0 auto;
                 }
             }
             
@@ -982,6 +1398,25 @@ form {
         }
     }
 
+    .ms2_form{
+        width: 100%;
+        
+    }
+
+    .pagination > li > a {
+        
+        color: black;
+        
+    }
+    
+    .pagination > li:active  > a  {
+        background-color:black;
+        
+        border-color: black;
+    }
+    
+    
+
 .about {
     padding-top: 60px;
     &-header {
@@ -1015,7 +1450,7 @@ form {
             }
         }
         &-slide{
-            margin: 16px 44px 0 50px;
+            margin: 16px -4px 0 1px
         }
     }
 }
@@ -1312,4 +1747,165 @@ form {
     }
     
 }
+
+.size{
+    &-header{
+        font-size: 24px;
+            font-weight: bold;
+    }
+    &-block{
+        padding-left: 0;
+        &-title{
+            padding-bottom: 20px;
+            text-indent: 14px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        &>img{
+
+        }
+        &>p{
+            padding-left: 7px;
+            font-size: 16px;
+            line-height: 18px;
+            
+        }
+        &-small-header{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px 0;
+            text-indent: 14px;
+        }
+        &>ul{
+            padding-left: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     
+
+    }
+}    
+
+.delivery-block{
+    &-header{
+        padding-top: 26px;
+        text-indent: 14px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &-image{
+        display: block;
+        margin: 0 auto;
+    }
+    &-title{
+        font-size: 24px;
+            font-weight: bold;
+    }
+    &-text{
+        padding: 6px 0;
+        line-height: 16px;
+        font-size: 13px;
+        
+    }
+}
+
+// Авторизация
+.loginLoginFieldset{
+    margin: 0;
+    
+}
+
+.loginLegend{
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+.login-button{
+    background: #f3e300;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    border: 0px;
+    padding: 8px 36px;
+    margin-right: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+   
+}
+.form-buttons{
+    padding-top: 20px;
+    &>input{
+        
+        background: #f3e300;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.25px;
+        border: 0px;
+        padding: 8px 36px;
+        margin-right: 6px;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+}
+
+.loginPassword{
+    width: 100%;
+}
+.loginUsername{
+    width: 100%;
+} 
+
+.login-remember{
+    
+    display: block;
+    font-weight: bold;
+}
+
+.loginPasswordLabel{
+    width: 100%;
+}
+
+.loginUsernameLabel{
+    width: 100%;
+}
+
+#username, #password, #password_confirm, #fullname, #email, #custom_field{
+    width: 100%;
+}
+
+.sucsess-registration-block{
+    margin: 0 auto;
+    margin-top: 20px;
+    background: linear-gradient(to top, #d1d1d1, #ffffff);
+    border: 2px solid #000;
+    &__title{
+        text-align: center;
+        font-size: 22px;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+    }
+    &__text{
+        text-indent: 14px;
+        padding: 5px;
+    }
+}
+
+.loginRegister>a{
+    background: #f3e300;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    border: 0px;
+    padding: 8px 36px;
+    margin-right: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
